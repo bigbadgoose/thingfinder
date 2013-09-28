@@ -36,7 +36,7 @@
             <h1>Thing Finder</h1>
         </div><!-- /header -->
 
-        <div data-role="content">
+        <div id="main-content" data-role="content">
             <h2>What Do You Want?</h2>
             <p><a href="#two" data-role="button">Beer</a></p>
         </div><!-- /content -->
@@ -50,15 +50,15 @@
     <!-- Start of second page: #two -->
     <div data-role="page" data-add-back-btn="header" id="two">
         <div data-role="header" data-position="fixed">
-          <h1>Beer is near!</h1>
+            <h1>The beer is near!</h1>
         </div><!-- /header -->
-
-        <div data-role="content">
-          <div>Distance: <span id="distance">Loading...</span></div>
-          <div>Direction: <span id="direction">Loading...</span></div>
-          <div>Angle: <span id="angle">Loading...</span></div>
+        <div id="main-content" data-role="content">
           <div id="compass-container">
-          	<div id="compass">Compass Here</div>
+          	<div id="rotation"><canvas id="canvas" width="392" height="392"></canvas></div>
+    		<div id="shadow"></div>
+    		<div id="direction"></div>
+    		<div id="distance"></div>
+    		<div id="angle"></div>
           </div>
         </div><!-- /content -->
     </div><!-- /page two -->
