@@ -24,20 +24,17 @@ body {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url('../images/compass_bg_new.png');
-  background-repeat: no-repeat;
-  background-position: right top;
   overflow: hidden;
 }
 
-#rotation{
+#rotation {
   position: absolute;
-  left: 44px;
-  top: 351px;
-  background-image: url('../images/compass_rotation.png');
+  left: 35px;
+  top: 150px;
+  background-image: url('../images/compass-300.png');
   background-repeat: no-repeat;
-  width: 392px;
-  height: 392px;
+  width: 300px;
+  height: 300px;
   -webkit-transition: all 0.7s ease-out;
   -webkit-transform: rotate(0deg);
 }
@@ -46,8 +43,6 @@ body {
   position: absolute;
   left: 44px;
   top: 351px;
-  background-image:url('../images/compass_cover.png');
-  background-repeat: no-repeat;
   width: 392px;
   height: 392px;
 }

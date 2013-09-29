@@ -1,5 +1,6 @@
 var angleMemory = -1,
-	rotation = 0;
+	rotation = 0,
+	brng = 0;
 
 function onDeviceOrientation(dataEvent) {
 	if (dataEvent.alpha !== angleMemory) {
@@ -18,6 +19,7 @@ function onDeviceOrientation(dataEvent) {
 			text += 'WEST';
 		}
 
+		//angle = angle + brng;
 		deltaAngle = angleMemory - angle;
 		
 		if (Math.abs(deltaAngle) > 180) {
@@ -47,8 +49,10 @@ function distance(lon1, lat1, lon2, lat2) {
           Math.sin(dLon/2) * Math.sin(dLon/2); 
   var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
   
-  console.log('dLat: ', dLat);
-  console.log('dLon: ', dLon);
+  var y = Math.sin(dLon) * Math.cos(lat2);
+  var x = Math.cos(lat1)*Math.sin(lat2) -
+          Math.sin(lat1)*Math.cos(lat2)*Math.cos(dLon);
+  brng = Math.atan2(y, x).toDeg();
   
   var d = R * c; // Distance in km
   return d;
@@ -61,13 +65,21 @@ if (typeof(Number.prototype.toRad) === "undefined") {
   }
 }
 
+/** Converts radians to numeric (signed) degrees */
+if (typeof Number.prototype.toDeg == 'undefined') {
+  Number.prototype.toDeg = function() {
+    return this * 180 / Math.PI;
+  }
+}
+
+
 function heartbeat() {
 	return setInterval(function() {
-		window.navigator.geolocation.getCurrentPosition(function(pos) {
-		  var km = distance(pos.coords.longitude, pos.coords.latitude, -122.08, 37.43);
+		//window.navigator.geolocation.getCurrentPosition(function(pos) {
+		  var km = distance(-122.2494, 37.4742, -122.08, 37.43);
 		  km = Math.round(km * 100) / 100;
 		  $('#distance').html(km + ' km');	 
-		});
+		//});
 	}, 1000);
 }
 
