@@ -1,5 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+
+
+// -------------------------- GLOBAL
+
 body {
 }
+
+
+
+// -------------------------- SPLASH
+
+
+
+
+
+// -------------------------- COMPASS
 
 #compass-container {
   position: absolute;
@@ -76,7 +91,12 @@ body {
   font-size: 15pt;
 }
 
-#main-content {
-  background: #FFD632;
+#one, #two {
+  background: #ffd632;
   color: #404040;
+  font-family: "Roboto";
+  background: #f5f3f0 url(asset_path('backgrounds/app-bg.jpg', image));
+  color: #404040;
+  font-size: 14px;
+  font-weight: 300;
 }
