@@ -2,81 +2,81 @@ body {
 }
 
 #compass-container {
-	position: absolute;
-	margin: 0px;
-	padding: 0px;
-	left: 0px;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	background-image: url('../images/compass_bg_new.png');
-	background-repeat: no-repeat;
-	background-position: right top;
-	overflow: hidden;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('../images/compass_bg_new.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  overflow: hidden;
 }
 
 #rotation{
-	position: absolute;
-	left: 44px;
-	top: 351px;
-	background-image: url('../images/compass_rotation.png');
-	background-repeat: no-repeat;
-	width: 392px;
-	height: 392px;
-	-webkit-transition: all 0.7s ease-out;
-	-webkit-transform: rotate(0deg);
+  position: absolute;
+  left: 44px;
+  top: 351px;
+  background-image: url('../images/compass_rotation.png');
+  background-repeat: no-repeat;
+  width: 392px;
+  height: 392px;
+  -webkit-transition: all 0.7s ease-out;
+  -webkit-transform: rotate(0deg);
 }
 
 #shadow{
-	position: absolute;
-	left: 44px;
-	top: 351px;
-	background-image:url('../images/compass_cover.png');
-	background-repeat: no-repeat;
-	width: 392px;
-	height: 392px;
+  position: absolute;
+  left: 44px;
+  top: 351px;
+  background-image:url('../images/compass_cover.png');
+  background-repeat: no-repeat;
+  width: 392px;
+  height: 392px;
 }
 
 #direction{
-	position: absolute;
-	right: 10px;
-	top: 40px ;
-	width: 392px;
-	height: 37px;
-	text-align: right;
-	font-weight: bold;
-	color: #FFFFFF;
-	font-family: verdana;
-	font-size: 15pt;
+  position: absolute;
+  right: 10px;
+  top: 40px ;
+  width: 392px;
+  height: 37px;
+  text-align: right;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: verdana;
+  font-size: 15pt;
 }
 
 #distance {
-	position: absolute;
-	right: 10px;
-	top: 10px ;
-	width: 392px;
-	height: 37px;
-	text-align: right;
-	font-weight: bold;
-	color: #FFFFFF;
-	font-family: verdana;
-	font-size: 15pt;
+  position: absolute;
+  right: 10px;
+  top: 10px ;
+  width: 392px;
+  height: 37px;
+  text-align: right;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: verdana;
+  font-size: 15pt;
 }
 
 #angle{
-	position: absolute;
-	right: 10px;
-	top: 70px ;
-	width: 392px;
-	height: 70px;
-	text-align: right;
-	font-weight: bold;
-	color: #FFFFFF;
-	font-family: verdana;
-	font-size: 15pt;
+  position: absolute;
+  right: 10px;
+  top: 70px ;
+  width: 392px;
+  height: 70px;
+  text-align: right;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: verdana;
+  font-size: 15pt;
 }
 
 #main-content {
-	background: #FFD632;
-	color: #404040;
+  background: #FFD632;
+  color: #404040;
 }
