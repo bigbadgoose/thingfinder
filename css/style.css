@@ -48,42 +48,45 @@ body {
 }
 
 #direction{
-  position: absolute;
-  right: 10px;
-  top: 40px ;
-  width: 392px;
-  height: 37px;
+  //position: absolute;
+  //right: 10px;
+  //top: 40px ;
+  //width: 392px;
+  //height: 37px;
   text-align: right;
-  font-weight: bold;
+  display: inline-block;
+  //font-weight: bold;
   color: #FFFFFF;
-  font-family: verdana;
-  font-size: 15pt;
+  //font-family: verdana;
+  //font-size: 15pt;
 }
 
 #distance {
-  position: absolute;
-  right: 10px;
-  top: 10px ;
-  width: 392px;
-  height: 37px;
+  //position: absolute;
+  //right: 10px;
+  //top: 10px ;
+  //width: 392px;
+  //height: 37px;
   text-align: right;
-  font-weight: bold;
+  display: inline-block;
+  //font-weight: bold;
   color: #FFFFFF;
-  font-family: verdana;
-  font-size: 15pt;
+  //font-family: verdana;
+  //font-size: 15pt;
 }
 
 #angle{
-  position: absolute;
-  right: 10px;
-  top: 70px ;
-  width: 392px;
-  height: 70px;
+  //position: absolute;
+  //right: 10px;
+  //top: 70px ;
+  //width: 392px;
+  //height: 70px;
   text-align: right;
-  font-weight: bold;
+  display: inline-block;
+  //font-weight: bold;
   color: #FFFFFF;
-  font-family: verdana;
-  font-size: 15pt;
+  //font-family: verdana;
+  //font-size: 15pt;
 }
 
 #one, #two {
@@ -95,3 +98,30 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
+
+
+// -------------------------- RESTYLE
+
+.ui-bar-s {
+  background: none;
+  color: 
+}
+
+#info {
+  margin-top: 50px;
+  color: #dd3b26;
+  text-align: center;
+}
+
+#info h1, #info p {
+  font-weight: 300 !important;
+  margin: 0; padding: );
+}
+
+#meta {
+  position: absolute;
+  top: 20px; right: 20px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
